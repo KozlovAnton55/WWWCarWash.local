@@ -1,0 +1,1124 @@
+/* Подключение шрифтов*/
+
+@font-face {
+    font-family: 'roboto flex';
+    src: url('../fonts/RobotoFlex-Regular.ttf');
+}
+
+/* Общие стили */
+
+body {
+    background-color: rgb(224, 224, 224);
+    font-family: 'roboto flex';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Отключение точек списков */
+
+li {
+    list-style: none;
+}
+
+/* Отключение нижнего подчеркивания у ссылок */
+
+a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 20px;
+}
+
+/* Шапка сайта */
+
+.headWrapper {
+    width: 100%;
+    height: 200px;
+    background-color: darkolivegreen;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.logotip {
+    width: 100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contactshead {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.navmenu {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.navmenu li {
+    margin-left: 40px;
+}
+
+.navmenu a {
+    color: #e2e612;
+}
+
+.icon {
+    width: 25px;
+}
+
+.iconsocial {
+    width: 25px;
+    margin-top: 10px;
+}
+
+/* Стили для кнопок авторизации и регистрации */
+
+.autentification .but {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.autentification button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Стили для иконки авторизованного пользователя */
+
+.user-profile {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+}
+
+.user-profile .user-login {
+    font-size: 15px;
+    color: #e2e612;
+}
+
+.user-profile form .logout-button {
+    height: 30px;
+    background-color: #4cae4c;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Стили для кнопок авторизвции и регистрации */
+
+.but {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+.but a button {
+    height: 30px;
+}
+
+/* Основной контент страницы INDEX.php*/
+
+h1 {
+    font-size: 60px;
+    color: rgb(179, 209, 128);
+    margin: 0;
+    padding: 50px;
+}
+
+.landingpage {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+#carwash {
+    background-image: url(../images/orig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Калькулятор услуг*/
+
+.calculatePrice {
+    background-color: rgb(124, 131, 113);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6f7e6;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.result.hidden {
+    display: none;
+}
+
+.result button {
+    margin-top: 10px;
+    background-color: #5cb85c;
+}
+
+.result button:hover {
+    background-color: #4cae4c;
+}
+
+/* Счетчик акции */
+
+.countdown-container {
+    background-color: rgb(124, 131, 113);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.promo-title {
+    color: #1f1d1c;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.promo-text {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer-unit {
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-unit span:first-child {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.timer-unit span:last-child {
+    font-size: 0.8em;
+}
+
+/* Отзывы клиентов */
+
+.coments {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.review-card {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(124, 131, 113);
+    margin-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    height: 200px;
+}
+
+h4 {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.review-text p {
+    position: absolute;
+    left: 10px;
+
+}
+
+.review-text cite {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+/* стили для страницы servises.html*/
+
+.serviseswrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+th,
+td,
+tr {
+    border: 1px solid rgb(57, 59, 52);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.priceListOftheOost {
+    width: 700px;
+    height: 200px;
+    background-color: rgb(124, 131, 113);
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 30px;
+    color: rgb(102, 121, 69);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.specialServices {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(124, 131, 113);
+    border-radius: 10px;
+}
+
+/*Стили для contacts.html*/
+
+.drivingDirections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.ourContacts a {
+    color: #1f1d1c;
+}
+
+.ourContacts h2 {
+    font-size: 35px;
+    color: rgb(59, 70, 42);
+}
+
+.ourContacts .addres {
+    font-size: 20px;
+    color: rgb(59, 70, 42);
+}
+
+.ourContacts .call {
+    font-size: 20px;
+    color: rgb(59, 70, 42);
+}
+
+.ourContacts .mail {
+    font-size: 20px;
+    color: rgb(59, 70, 42);
+}
+
+/* Страница formauthorisation.html */
+
+.formauthoris {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(59, 70, 42);
+    margin-bottom: 50px;
+    background-color: rgb(124, 131, 113);
+    border-radius: 20px;
+}
+
+.formauthoris h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.formauthoris .enter {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #4cae4c;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.formauthoris input {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+/* Страница formregistration.html */
+
+.formreg {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(59, 70, 42);
+    margin-bottom: 50px;
+    background-color: rgb(124, 131, 113);
+    border-radius: 20px;
+}
+
+.formreg h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.formreg .enter {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #4cae4c;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.formreg input {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+/* Подвал сайта*/
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: darkolivegreen;
+    padding-top: 60px;
+}
+
+.logoname {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Медиа запрос для экранов меньше 1440px */
+
+@media (max-width: 1440px) {
+
+    /* Стили для иконки авторизованного пользователя */
+
+    .user-profile {
+        height: 50px;
+        right: 20px;
+        bottom: 10px;
+    }
+
+    /* Отзывы клиентов страницы index.php */
+
+    .review-card {
+        width: 150px;
+        height: 300px;
+    }
+
+    .review-text p {
+        font-size: 13px;
+
+    }
+
+    .coments {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .circle-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .review-text cite {
+        font-size: 13px;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    /* Страница contacts.php */
+
+    .map img {
+        width: 700px;
+        height: 500px;
+    }
+
+}
+
+/* Медиа запрос для экранов меньше 1024px */
+
+@media (max-width: 1024px) {
+
+    /* Стили для иконки авторизованного пользователя */
+
+    .user-profile {
+        right: 20px;
+        bottom: 10px;
+    }
+
+    /* Отзывы клиентов страницы index.php */
+
+    .coments {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* Страница servises.php */
+
+    .priceListOftheOost {
+        width: 500px;
+        height: 200px;
+    }
+
+    .specialServices {
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Страница contacts.php */
+
+    .map img {
+        width: 550px;
+        height: 400px;
+    }
+}
+
+/* Медиа запрос для экранов меньше 768px */
+
+@media (max-width: 768px) {
+
+    /* Шапка сайта */
+
+    .headWrapper {
+        height: 170px;
+        margin-bottom: 30px;
+    }
+
+    .logotip {
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logotip img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .logotip i {
+        font-size: 15px;
+    }
+
+    .contactshead a {
+        width: 250px;
+        height: 150px;
+        top: 10px;
+        left: 10px;
+        font-size: 15px;
+    }
+
+    .navmenu {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .navmenu li {
+        margin-left: 30px;
+    }
+
+    .navmenu a {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+
+    .iconsocial {
+        width: 15px;
+        margin-top: 10px;
+    }
+
+
+    /* Стили для иконки авторизованного пользователя */
+
+    .user-profile {
+        right: 30px;
+        top: 20px;
+        width: 80px;
+        height: 120px;
+    }
+
+    .user-profile img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .user-profile .user-login {
+        font-size: 15px;
+    }
+
+    .user-profile form .logout-button {
+        height: 20px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Страница formauthorisation.html */
+
+    .formauthoris h2 {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    /* Страница formregistration.html */
+
+    .formreg h2 {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    /* Основной контент страницы INDEX.HTML*/
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .landingpage {
+        gap: 20px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .landingpage article {
+        width: 60%;
+        height: 100%;
+    }
+
+    /* Калькулятор услуг*/
+
+    .calculatePrice {
+        width: 40%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .calculatePrice .form-group {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Отчет акции */
+
+    .countdown-container {
+        margin-bottom: 30px;
+    }
+
+    /* Отзывы наших клиентов */
+
+    .coments .hidden {
+        display: none;
+    }
+
+    .review-card {
+        margin-bottom: 30px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 150px;
+        padding-top: 40px;
+    }
+
+    /* Страница servises.php */
+
+    .serviseswrap {
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .priceListOftheOost {
+        width: 500px;
+        height: 200px;
+    }
+
+    .specialServices {
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Страница contacts.php */
+
+    .map img {
+        width: 370px;
+        height: 370px;
+    }
+
+    .ourContacts {
+        width: 300px;
+    }
+
+}
+
+/* Медиа запрос для экранов меньше 425px */
+
+@media (max-width: 425px) {
+
+    /* Шапка сайта */
+
+    .headWrapper {
+        height: 170px;
+        margin-bottom: 30px;
+    }
+
+    .contactshead {
+        width: 150px;
+        height: 120px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .navmenu li {
+        margin-left: 60px;
+    }
+
+    .tel a {
+        font-size: 13px;
+    }
+
+    .email a {
+        font-size: 13px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+
+    .iconsocial {
+        width: 15px;
+        margin-top: 7px;
+    }
+
+    /* Страница formauthorisation.html */
+
+    .formauthoris {
+        width: 100%;
+    }
+
+    .formauthoris h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+    }
+
+    /* Страница formregistration.html */
+
+    .formreg {
+        width: 100%;
+    }
+
+    .formreg h2 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+    }
+
+    /* Стили для кнопок авторизации и регистрации */
+
+    .autentification button {
+        width: 100px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .autentification .but {
+        width: 100px;
+        height: 70px;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Стили для иконки авторизованного пользователя */
+
+    .user-profile {
+        width: 60px;
+        height: 115px;
+        top: 10px;
+        right: 20px;
+    }
+
+    .user-profile img {
+        width: 100%;
+        height: 60px;
+    }
+
+    /* Основной контент страницы INDEX.php*/
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .landingpage {
+        flex-wrap: wrap;
+        margin-bottom: 550px;
+    }
+
+    #carwash {
+        width: 100%;
+    }
+
+    /* Калькулятор услуг*/
+
+    .calculatePrice {
+        width: 100%;
+    }
+
+    form .wash-form {
+        width: 100%;
+        height: 500px;
+    }
+
+    /*Отзывы клиентов */
+
+    .coments {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .review-card {
+        width: 100px;
+        height: 250px;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-card .card {
+        height: 100px;
+    }
+
+    h4 {
+        margin: 0px;
+    }
+
+    .review-text {
+        margin-top: 5px;
+    }
+
+    /* Счеткик акции */
+
+    .about {
+        width: 100%;
+    }
+
+    .promo-title {
+        margin-bottom: 10px;
+    }
+
+    .timer-container {
+        gap: 10px;
+    }
+
+    .timer-unit span:first-child {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .timer-unit span:last-child {
+        font-size: 0.5em;
+    }
+
+    /* Страница servises.php */
+
+    figcaption {
+        font-size: 20px;
+    }
+
+    table td {
+        font-size: 10px;
+    }
+
+    table th {
+        font-size: 13px;
+    }
+
+    .priceListOftheOost {
+        width: 300px;
+    }
+
+    /* Страница contacts.php */
+
+    .drivingDirections {
+        flex-wrap: wrap;
+    }
+
+    .ourContacts {
+        width: 100%;
+    }
+
+    .ourContacts h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .map img {
+        width: 100%;
+        height: auto;
+    }
+
+    .drivingDirections {
+        margin-bottom: 30px;
+    }
+}
+
+/* Медиа запрос для экранов меньше 375px */
+
+@media (max-width: 375px) {
+
+    /* Шапка сайта */
+
+    .contactshead {
+        left: 10px;
+    }
+
+    .logotip {
+        width: 80px;
+        height: 100px;
+    }
+
+    .navmenu li {
+        margin-left: 50px;
+    }
+
+    .tel a {
+        font-size: 10px;
+    }
+
+    .email a {
+        font-size: 10px;
+    }
+
+    /* Отчет акции index.php */
+
+    .countdown-container {
+        margin-bottom: 30px;
+    }
+
+    .countdown-container .promo-title {
+        padding: 0px;
+        font-size: 30px;
+        width: 100%;
+    }
+
+    /* Отзывы клиентов */
+
+    .coments {
+        margin: 0px;
+        gap: 2px;
+    }
+
+    .coments .review-card {
+        width: 100%;
+    }
+
+    /* Страница servises.php */
+
+    table th {
+        font-size: 10px;
+    }
+
+    .priceListOftheOost {
+        width: 250px;
+    }
+
+    /* Страница contacts.php */
+
+    .ourContacts h2 {
+        font-size: 25px;
+    }
+
+    .ourContacts p .addres {
+        font-size: 15px;
+    }
+
+    .ourContacts p {
+        font-size: 12px;
+    }
+
+    .ourContacts p .call {
+        font-size: 15px;
+    }
+
+    .ourContacts p a {
+        font-size: 12px;
+    }
+
+    .ourContacts p .mail {
+        font-size: 15px;
+    }
+
+}
+
+/* Медиа запрос для экранов 320px */
+
+@media (max-width: 320px) {
+
+    /* Шапка сайта */
+
+    .logotip {
+        width: 60px;
+        height: 90px;
+    }
+
+    .navmenu li {
+        margin-left: 35px;
+    }
+
+    /* Основной контент страницы index.php */
+
+    #carwash h1 {
+        font-size: 35px;
+        width: 100%;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    /* Отчет акции */
+
+    .timer-unit span:first-child {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    .timer-unit span:last-child {
+        font-size: 0.3em;
+    }
+
+    .countdown-container .promo-title {
+        font-size: 30px;
+    }
+
+}
